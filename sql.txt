@@ -1,0 +1,37 @@
+SQL QUERY ..
+
+
+CREATE TABLE devices(
+  id INT IDENTITY(1,1) PRIMARY KEY,
+  device_id NVARCHAR(255),
+  device_number1 NVARCHAR(255),
+  device_number2 NVARCHAR (255),
+  device_number3 NVARCHAR (255),
+  device_number4 NVARCHAR (255),
+  parameter_name1 NVARCHAR(255),
+  parameter_name2 NVARCHAR(255),
+  parameter_name3 NVARCHAR(255),
+  parameter_name4 NVARCHAR(255),
+  parameter_name5 NVARCHAR(255),
+  parameter_name6 NVARCHAR(255),
+  parameter_name7 NVARCHAR(255),
+  parameter_name8 NVARCHAR(255),
+  parameter_name9 NVARCHAR(255),
+  parameter_name10 NVARCHAR(255),
+  device_name NVARCHAR(255),
+  parameter1 NVARCHAR(255),
+  parameter2 NVARCHAR(255),
+  parameter3 NVARCHAR(255),
+  parameter4 NVARCHAR(255),
+  parameter5 NVARCHAR(255),
+  parameter6 NVARCHAR(255),
+  parameter7 NVARCHAR(255),
+  parameter8 NVARCHAR(255),
+  parameter9 NVARCHAR(255),
+  parameter10 NVARCHAR(255),
+  user_id INT,
+  created_at DATETIME DEFAULT GETDATE(),
+  updated_at DATETIME DEFAULT GETDATE()
+);
+
+
