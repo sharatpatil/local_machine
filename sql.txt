@@ -34,4 +34,28 @@ CREATE TABLE devices(
   updated_at DATETIME DEFAULT GETDATE()
 );
 
+CREATE TABLE Config
+(
+    id INT PRIMARY KEY IDENTITY(1,1),
+    parameter_name NVARCHAR(255),
+    upper_limit DECIMAL(10,4),
+    lower_limit DECIMAL(10,4),
+    createdAt DATETIME,
+    updatedAt DATETIME
+);
+
+
+INSERT INTO Config (parameter_name, upper_limit, lower_limit)
+VALUES ('parameter1', 10, 8),
+       ('parameter2', 5, 4),
+       ('parameter3', 20.2, 0),
+       ('parameter4', 12.8, 0),
+       ('parameter5', 18.9, 0),
+       ('parameter6', 22.1, 0),
+       ('parameter7', 16.7, 0),
+       ('parameter8', 9.3, 0),
+       ('parameter9', 11.6, 0),
+       ('parameter10', 14.2, 0);
+
+
 
